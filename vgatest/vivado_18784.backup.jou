@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Sep  9 23:30:24 2021
+# Process ID: 18784
+# Current directory: D:/Documents/vivado/vgatest
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25324 D:\Documents\vivado\vgatest\vgatest.xpr
+# Log file: D:/Documents/vivado/vgatest/vivado.log
+# Journal file: D:/Documents/vivado/vgatest\vivado.jou
+#-----------------------------------------------------------
+start_guiopen_project D:/Documents/vivado/vgatest/vgatest.xpr
+update_compile_order -fileset sources_1
+
+synth_design -rtl -name rtl_1
+set_property package_pin "" [get_ports [list  clk_pin]]
+set_property package_pin "" [get_ports [list  clk_pin]]
+refresh_design
+set_property -dict [list CONFIG.CLKOUT3_USED {true} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {25} CONFIG.MMCM_CLKOUT2_DIVIDE {40} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT3_JITTER {175.402} CONFIG.CLKOUT3_PHASE_ERROR {98.575}] [get_ips clk_core]
+generate_target all [get_files  D:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core.xci]
+catch { config_ip_cache -export [get_ips -all clk_core] }
+export_ip_user_files -of_objects [get_files D:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core.xci] -no_script -sync -force -quiet
+reset_run clk_core_synth_1
+launch_runs -jobs 4 clk_core_synth_1
+export_simulation -of_objects [get_files D:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core.xci] -directory D:/Documents/vivado/vgatest/vgatest.ip_user_files/sim_scripts -ip_user_files_dir D:/Documents/vivado/vgatest/vgatest.ip_user_files -ipstatic_source_dir D:/Documents/vivado/vgatest/vgatest.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Documents/vivado/vgatest/vgatest.cache/compile_simlib/modelsim} {questa=D:/Documents/vivado/vgatest/vgatest.cache/compile_simlib/questa} {riviera=D:/Documents/vivado/vgatest/vgatest.cache/compile_simlib/riviera} {activehdl=D:/Documents/vivado/vgatest/vgatest.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet

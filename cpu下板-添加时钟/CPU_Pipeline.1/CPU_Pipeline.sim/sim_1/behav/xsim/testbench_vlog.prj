@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../CPU_Pipeline.srcs/sources_1/new" \
+"../../../../CPU_Pipeline.srcs/sources_1/ip/data_ram/sim/data_ram.v" \
+"../../../../CPU_Pipeline.srcs/sources_1/ip/inst_rom/sim/inst_rom.v" \
+"../../../../CPU_Pipeline.srcs/sources_1/new/control.v" \
+"../../../../CPU_Pipeline.srcs/sources_1/new/cpu_pipeline.v" \
+"../../../../CPU_Pipeline.srcs/sources_1/new/ex.v" \
+"../../../../CPU_Pipeline.srcs/sources_1/new/ex_mem.v" \
+"../../../../CPU_Pipeline.srcs/sources_1/new/id.v" \
+"../../../../CPU_Pipeline.srcs/sources_1/new/id_ex.v" \
+"../../../../CPU_Pipeline.srcs/sources_1/new/if_id.v" \
+"../../../../CPU_Pipeline.srcs/sources_1/new/mem.v" \
+"../../../../CPU_Pipeline.srcs/sources_1/new/mem_wb.v" \
+"../../../../CPU_Pipeline.srcs/sources_1/new/pc.v" \
+"../../../../CPU_Pipeline.srcs/sources_1/new/regfile.v" \
+"../../../../CPU_Pipeline.srcs/sources_1/new/seg7decimal.v" \
+"../../../../CPU_Pipeline.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

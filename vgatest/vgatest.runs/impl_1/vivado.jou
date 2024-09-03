@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Oct 10 23:55:50 2021
+# Process ID: 16552
+# Current directory: D:/Documents/vivado/vgatest/vgatest.runs/impl_1
+# Command line: vivado.exe -log bt_uart.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source bt_uart.tcl -notrace
+# Log file: D:/Documents/vivado/vgatest/vgatest.runs/impl_1/bt_uart.vdi
+# Journal file: D:/Documents/vivado/vgatest/vgatest.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source bt_uart.tcl -notrace

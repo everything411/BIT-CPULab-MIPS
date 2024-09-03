@@ -1,0 +1,437 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Oct 10 23:49:24 2021
+# Process ID: 15536
+# Current directory: D:/Documents/vivado/vgatest
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24072 D:\Documents\vivado\vgatest\vgatest.xpr
+# Log file: D:/Documents/vivado/vgatest/vivado.log
+# Journal file: D:/Documents/vivado/vgatest\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Documents/vivado/vgatest/vgatest.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 904.773 ; gain = 265.137
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: bt_uart
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1432.859 ; gain = 230.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bt_uart' [D:/Documents/vivado/vgatest/vgatest.srcs/source/bt_uart.v:4]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter CLOCK_RATE_RX bound to: 100000000 - type: integer 
+	Parameter CLOCK_RATE_TX bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46211]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (2#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46211]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [D:/Documents/vivado/vgatest/vgatest.srcs/source/clk_gen.v:33]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/Documents/vivado/vgatest/vgatest.srcs/source/clk_div.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (3#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/clk_div.v:30]
+INFO: [Synth 8-6157] synthesizing module 'clk_core' [D:/Documents/vivado/vgatest/.Xil/Vivado-15536-DESKTOP-6IOG41U/realtime/clk_core_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_core' (4#1) [D:/Documents/vivado/vgatest/.Xil/Vivado-15536-DESKTOP-6IOG41U/realtime/clk_core_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'BUFHCE' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1321]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter INIT_OUT bound to: 0 - type: integer 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'BUFHCE' (5#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1321]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (6#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/clk_gen.v:33]
+INFO: [Synth 8-6157] synthesizing module 'top_flyinglogo' [D:/Documents/vivado/vgatest/vgatest.srcs/source/top_flyinglogo.v:4]
+	Parameter logo_length bound to: 10'b0010101001 
+	Parameter logo_hight bound to: 10'b0001001110 
+INFO: [Synth 8-6157] synthesizing module 'logo_rom' [D:/Documents/vivado/vgatest/.Xil/Vivado-15536-DESKTOP-6IOG41U/realtime/logo_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'logo_rom' (7#1) [D:/Documents/vivado/vgatest/.Xil/Vivado-15536-DESKTOP-6IOG41U/realtime/logo_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vga_640x480' [D:/Documents/vivado/vgatest/vgatest.srcs/source/vga_timing.v:4]
+	Parameter h_frontporch bound to: 96 - type: integer 
+	Parameter h_active bound to: 144 - type: integer 
+	Parameter h_backporch bound to: 784 - type: integer 
+	Parameter h_total bound to: 800 - type: integer 
+	Parameter v_frontporch bound to: 2 - type: integer 
+	Parameter v_active bound to: 35 - type: integer 
+	Parameter v_backporch bound to: 515 - type: integer 
+	Parameter v_total bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_640x480' (8#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/vga_timing.v:4]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [D:/Documents/vivado/vgatest/vgatest.srcs/source/debounce.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (9#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/debounce.v:3]
+INFO: [Synth 8-226] default block is never used [D:/Documents/vivado/vgatest/vgatest.srcs/source/top_flyinglogo.v:189]
+WARNING: [Synth 8-6014] Unused sequential element flag_edge_reg was removed.  [D:/Documents/vivado/vgatest/vgatest.srcs/source/top_flyinglogo.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'top_flyinglogo' (10#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/top_flyinglogo.v:4]
+INFO: [Synth 8-6157] synthesizing module 'rst_gen' [D:/Documents/vivado/vgatest/vgatest.srcs/source/rst_gen.v:26]
+INFO: [Synth 8-6157] synthesizing module 'reset_bridge' [D:/Documents/vivado/vgatest/vgatest.srcs/source/reset_bridge.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'reset_bridge' (11#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/reset_bridge.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'rst_gen' (12#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/rst_gen.v:26]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_rx.v:6]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'meta_harden' [D:/Documents/vivado/vgatest/vgatest.srcs/source/meta_harden.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'meta_harden' (13#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/meta_harden.v:27]
+INFO: [Synth 8-6157] synthesizing module 'uart_baud_gen' [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_baud_gen.v:35]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+	Parameter OVERSAMPLE_RATE bound to: 153600 - type: integer 
+	Parameter DIVIDER bound to: 651 - type: integer 
+	Parameter OVERSAMPLE_VALUE bound to: 650 - type: integer 
+	Parameter CNT_WID bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud_gen' (14#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_baud_gen.v:35]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx_ctl' [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_rx_ctl.v:52]
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter DATA bound to: 2'b10 
+	Parameter STOP bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx_ctl' (15#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_rx_ctl.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (16#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_rx.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cmd_parse' [D:/Documents/vivado/vgatest/vgatest.srcs/source/cmd_parse.v:6]
+	Parameter MAX_ARG_CH bound to: 8 - type: integer 
+	Parameter RESP_OK bound to: 2'b00 
+	Parameter RESP_ERR bound to: 2'b01 
+	Parameter IDLE bound to: 3'b000 
+	Parameter CMD_WAIT bound to: 3'b001 
+	Parameter GET_ARG bound to: 3'b010 
+	Parameter SEND_RESP bound to: 3'b011 
+	Parameter CMD_W bound to: 7'b1010111 
+	Parameter CMD_R bound to: 7'b1010010 
+	Parameter CMD_N bound to: 7'b1001110 
+	Parameter CMD_P bound to: 7'b1010000 
+	Parameter CMD_S bound to: 7'b1010011 
+	Parameter CMD_n_l bound to: 7'b1101110 
+	Parameter CMD_p_l bound to: 7'b1110000 
+	Parameter CMD_s_l bound to: 7'b1110011 
+	Parameter CMD_G bound to: 7'b1000111 
+	Parameter CMD_C bound to: 7'b1000011 
+	Parameter CMD_H bound to: 7'b1001000 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/vivado/vgatest/vgatest.srcs/source/cmd_parse.v:237]
+INFO: [Synth 8-6155] done synthesizing module 'cmd_parse' (17#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/cmd_parse.v:6]
+INFO: [Synth 8-6157] synthesizing module 'resp_gen' [D:/Documents/vivado/vgatest/vgatest.srcs/source/resp_gen.v:41]
+	Parameter RESP_OK bound to: 2'b00 
+	Parameter RESP_ERR bound to: 2'b01 
+	Parameter RESP_DATA bound to: 2'b11 
+	Parameter STR_OK_LEN bound to: 5 - type: integer 
+	Parameter STR_ERR_LEN bound to: 6 - type: integer 
+	Parameter STR_DATA_LEN bound to: 13 - type: integer 
+	Parameter STR_LEN bound to: 13 - type: integer 
+	Parameter CNT_WID bound to: 4 - type: integer 
+	Parameter LEN_WID bound to: 4 - type: integer 
+	Parameter IDLE bound to: 1'b0 
+	Parameter SENDING bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'to_bcd' [D:/Documents/vivado/vgatest/vgatest.srcs/source/to_bcd.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'to_bcd' (18#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/to_bcd.v:33]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/Documents/vivado/vgatest/vgatest.srcs/source/resp_gen.v:213]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/Documents/vivado/vgatest/vgatest.srcs/source/resp_gen.v:223]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/Documents/vivado/vgatest/vgatest.srcs/source/resp_gen.v:234]
+INFO: [Synth 8-6155] done synthesizing module 'resp_gen' (19#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/resp_gen.v:41]
+INFO: [Synth 8-6157] synthesizing module 'char_fifo' [D:/Documents/vivado/vgatest/.Xil/Vivado-15536-DESKTOP-6IOG41U/realtime/char_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'char_fifo' (20#1) [D:/Documents/vivado/vgatest/.Xil/Vivado-15536-DESKTOP-6IOG41U/realtime/char_fifo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_tx.v:35]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_tx_ctl' [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_tx_ctl.v:60]
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter DATA bound to: 2'b10 
+	Parameter STOP bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx_ctl' (21#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_tx_ctl.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (22#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_tx.v:35]
+INFO: [Synth 8-6157] synthesizing module 'lb_ctl' [D:/Documents/vivado/vgatest/vgatest.srcs/source/lb_ctl.v:32]
+	Parameter FILTER bound to: 200000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [D:/Documents/vivado/vgatest/vgatest.srcs/source/debouncer.v:26]
+	Parameter FILTER bound to: 200000 - type: integer 
+	Parameter RELOAD bound to: 199999 - type: integer 
+	Parameter FILTER_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (23#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/debouncer.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'lb_ctl' (24#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/lb_ctl.v:32]
+INFO: [Synth 8-6157] synthesizing module 'seg7decimal' [D:/Documents/vivado/vgatest/vgatest.srcs/source/seg7decimal.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Documents/vivado/vgatest/vgatest.srcs/source/seg7decimal.v:47]
+INFO: [Synth 8-226] default block is never used [D:/Documents/vivado/vgatest/vgatest.srcs/source/seg7decimal.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'seg7decimal' (25#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/seg7decimal.v:23]
+WARNING: [Synth 8-3848] Net clk in module/entity bt_uart does not have driver. [D:/Documents/vivado/vgatest/vgatest.srcs/source/bt_uart.v:164]
+INFO: [Synth 8-6155] done synthesizing module 'bt_uart' (26#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/bt_uart.v:4]
+WARNING: [Synth 8-3331] design bt_uart has unconnected port sw_pin[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1491.836 ; gain = 289.547
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1491.836 ; gain = 289.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1491.836 ; gain = 289.547
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/char_fifo/char_fifo.dcp' for cell 'char_fifo_i0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core.dcp' for cell 'clk_gen_i0/clk_core_i0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/logo_rom/logo_rom.dcp' for cell 'vga/u1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1491.836 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i0 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i1 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i10 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i11 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i2 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i3 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i4 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i5 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i6 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i7 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i8 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i9 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+INFO: [Opt 31-140] Inserted 5 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 7 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core_board.xdc] for cell 'clk_gen_i0/clk_core_i0/inst'
+Finished Parsing XDC File [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core_board.xdc] for cell 'clk_gen_i0/clk_core_i0/inst'
+Parsing XDC File [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core.xdc] for cell 'clk_gen_i0/clk_core_i0/inst'
+Finished Parsing XDC File [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core.xdc] for cell 'clk_gen_i0/clk_core_i0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bt_uart_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bt_uart_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/char_fifo/char_fifo.xdc] for cell 'char_fifo_i0/U0'
+Finished Parsing XDC File [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/char_fifo/char_fifo.xdc] for cell 'char_fifo_i0/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/Documents/vivado/vgatest/vgatest.srcs/constrs_1/new/display_vga.xdc]
+Finished Parsing XDC File [D:/Documents/vivado/vgatest/vgatest.srcs/constrs_1/new/display_vga.xdc]
+Parsing XDC File [D:/Documents/vivado/vgatest/vgatest.srcs/constraints/bluetooth.xdc]
+Finished Parsing XDC File [D:/Documents/vivado/vgatest/vgatest.srcs/constraints/bluetooth.xdc]
+Parsing XDC File [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/char_fifo/char_fifo_clocks.xdc] for cell 'char_fifo_i0/U0'
+Finished Parsing XDC File [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/char_fifo/char_fifo_clocks.xdc] for cell 'char_fifo_i0/U0'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'char_fifo_i0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'char_fifo_i0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'char_fifo_i0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'char_fifo_i0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'char_fifo_i0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'char_fifo_i0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'char_fifo_i0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'char_fifo_i0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bt_uart_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bt_uart_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'char_fifo_i0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'char_fifo_i0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'char_fifo_i0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'char_fifo_i0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bt_uart_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bt_uart_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1602.066 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 1660.305 ; gain = 458.016
+75 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:18 . Memory (MB): peak = 1660.305 ; gain = 651.473
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/vivado/vgatest/vgatest.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/Documents/vivado/vgatest/vgatest.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'bt_uart' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Documents/vivado/vgatest/vgatest.sim/sim_1/behav/xsim/logo_rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/Documents/vivado/vgatest/vgatest.sim/sim_1/behav/xsim/test7.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/vivado/vgatest/vgatest.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj bt_uart_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/char_fifo/sim/char_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module char_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/logo_rom/sim/logo_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logo_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_core_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/cmd_parse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmd_parse
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/lb_ctl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lb_ctl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/meta_harden.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module meta_harden
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/reset_bridge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_bridge
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/resp_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module resp_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/rst_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rst_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/seg7decimal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7decimal
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/to_bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module to_bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/top_flyinglogo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_flyinglogo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_rx_ctl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx_ctl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_tx_ctl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_ctl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/vga_timing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_640x480
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.srcs/source/bt_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bt_uart
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [D:/Documents/vivado/vgatest/vgatest.srcs/source/bt_uart.v:164]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/vivado/vgatest/vgatest.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj bt_uart_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1660.305 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/vivado/vgatest/vgatest.sim/sim_1/behav/xsim'
+"xelab -wto 7a0326734e8842dc9ab4fc8ec55fb9a4 --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot bt_uart_behav xil_defaultlib.bt_uart xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7a0326734e8842dc9ab4fc8ec55fb9a4 --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot bt_uart_behav xil_defaultlib.bt_uart xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module xil_defaultlib.clk_div
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_core_clk_wiz
+Compiling module xil_defaultlib.clk_core
+Compiling module unisims_ver.BUFGCTRL(PRESELECT_I0="TRUE",PRE...
+Compiling module unisims_ver.INV
+Compiling module unisims_ver.BUFHCE
+Compiling module xil_defaultlib.clk_gen
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.logo_rom
+Compiling module xil_defaultlib.vga_640x480
+Compiling module xil_defaultlib.debounce
+Compiling module xil_defaultlib.top_flyinglogo
+Compiling module xil_defaultlib.reset_bridge
+Compiling module xil_defaultlib.rst_gen
+Compiling module xil_defaultlib.meta_harden
+Compiling module xil_defaultlib.uart_baud_gen(BAUD_RATE=9600,CLO...
+Compiling module xil_defaultlib.uart_rx_ctl
+Compiling module xil_defaultlib.uart_rx(BAUD_RATE=9600,CLOCK_RAT...
+Compiling module xil_defaultlib.cmd_parse
+Compiling module xil_defaultlib.to_bcd
+Compiling module xil_defaultlib.resp_gen_default
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_sync_stag...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_a...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.char_fifo
+Compiling module xil_defaultlib.uart_tx_ctl
+Compiling module xil_defaultlib.uart_tx(BAUD_RATE=9600,CLOCK_RAT...
+Compiling module xil_defaultlib.debouncer(FILTER=200000)
+Compiling module xil_defaultlib.lb_ctl
+Compiling module xil_defaultlib.seg7decimal
+Compiling module xil_defaultlib.bt_uart
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot bt_uart_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/Documents/vivado/vgatest/vgatest.sim/sim_1/behav/xsim/xsim.dir/bt_uart_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Documents/vivado/vgatest/vgatest.sim/sim_1/behav/xsim/xsim.dir/bt_uart_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Oct 10 23:53:15 2021. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 10 23:53:15 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1660.305 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/vivado/vgatest/vgatest.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "bt_uart_behav -key {Behavioral:sim_1:Functional:bt_uart} -tclbatch {bt_uart.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source bt_uart.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module bt_uart.vga.u1.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'bt_uart_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1660.305 ; gain = 0.000
+open_hw_manager
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Sun Oct 10 23:55:42 2021] Launched impl_1...
+Run output will be captured here: D:/Documents/vivado/vgatest/vgatest.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1670.699 ; gain = 0.090
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 10 23:58:01 2021...

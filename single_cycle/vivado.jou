@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Oct 10 23:22:44 2021
+# Process ID: 19924
+# Current directory: D:/Documents/vivado/single_cycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26484 D:\Documents\vivado\single_cycle\single_cycle.xpr
+# Log file: D:/Documents/vivado/single_cycle/vivado.log
+# Journal file: D:/Documents/vivado/single_cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Documents/vivado/single_cycle/single_cycle.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files D:/Documents/vivado/soft/adder8bit.coe] -no_script -reset -force -quiet
+remove_files  D:/Documents/vivado/soft/adder8bit.coe
+export_ip_user_files -of_objects  [get_files D:/Documents/vivado/soft/fibonacci.coe] -no_script -reset -force -quiet
+remove_files  D:/Documents/vivado/soft/fibonacci.coe
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+open_wave_config D:/Documents/vivado/single_cycle/testbench_behav.wcfg
+source testbench.tcl
+open_run synth_1 -name synth_1
+report_drc -name drc_1 -ruledecks {default}
+close_sim

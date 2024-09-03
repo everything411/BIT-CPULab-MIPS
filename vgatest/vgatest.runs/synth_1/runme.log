@@ -1,0 +1,747 @@
+
+*** Running vivado
+    with args -log bt_uart.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bt_uart.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source bt_uart.tcl -notrace
+Command: synth_design -top bt_uart -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25112 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 962.859 ; gain = 233.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bt_uart' [D:/Documents/vivado/vgatest/vgatest.srcs/source/bt_uart.v:4]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter CLOCK_RATE_RX bound to: 100000000 - type: integer 
+	Parameter CLOCK_RATE_TX bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46211]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (2#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46211]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [D:/Documents/vivado/vgatest/vgatest.srcs/source/clk_gen.v:33]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/Documents/vivado/vgatest/vgatest.srcs/source/clk_div.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (3#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/clk_div.v:30]
+INFO: [Synth 8-6157] synthesizing module 'clk_core' [D:/Documents/vivado/vgatest/vgatest.runs/synth_1/.Xil/Vivado-15008-DESKTOP-6IOG41U/realtime/clk_core_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_core' (4#1) [D:/Documents/vivado/vgatest/vgatest.runs/synth_1/.Xil/Vivado-15008-DESKTOP-6IOG41U/realtime/clk_core_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'BUFHCE' [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1321]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter INIT_OUT bound to: 0 - type: integer 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'BUFHCE' (5#1) [D:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1321]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (6#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/clk_gen.v:33]
+INFO: [Synth 8-6157] synthesizing module 'top_flyinglogo' [D:/Documents/vivado/vgatest/vgatest.srcs/source/top_flyinglogo.v:4]
+	Parameter logo_length bound to: 10'b0010101001 
+	Parameter logo_hight bound to: 10'b0001001110 
+INFO: [Synth 8-6157] synthesizing module 'logo_rom' [D:/Documents/vivado/vgatest/vgatest.runs/synth_1/.Xil/Vivado-15008-DESKTOP-6IOG41U/realtime/logo_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'logo_rom' (7#1) [D:/Documents/vivado/vgatest/vgatest.runs/synth_1/.Xil/Vivado-15008-DESKTOP-6IOG41U/realtime/logo_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vga_640x480' [D:/Documents/vivado/vgatest/vgatest.srcs/source/vga_timing.v:4]
+	Parameter h_frontporch bound to: 96 - type: integer 
+	Parameter h_active bound to: 144 - type: integer 
+	Parameter h_backporch bound to: 784 - type: integer 
+	Parameter h_total bound to: 800 - type: integer 
+	Parameter v_frontporch bound to: 2 - type: integer 
+	Parameter v_active bound to: 35 - type: integer 
+	Parameter v_backporch bound to: 515 - type: integer 
+	Parameter v_total bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_640x480' (8#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/vga_timing.v:4]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [D:/Documents/vivado/vgatest/vgatest.srcs/source/debounce.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (9#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/debounce.v:3]
+INFO: [Synth 8-226] default block is never used [D:/Documents/vivado/vgatest/vgatest.srcs/source/top_flyinglogo.v:189]
+WARNING: [Synth 8-6014] Unused sequential element flag_edge_reg was removed.  [D:/Documents/vivado/vgatest/vgatest.srcs/source/top_flyinglogo.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'top_flyinglogo' (10#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/top_flyinglogo.v:4]
+INFO: [Synth 8-6157] synthesizing module 'rst_gen' [D:/Documents/vivado/vgatest/vgatest.srcs/source/rst_gen.v:26]
+INFO: [Synth 8-6157] synthesizing module 'reset_bridge' [D:/Documents/vivado/vgatest/vgatest.srcs/source/reset_bridge.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'reset_bridge' (11#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/reset_bridge.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'rst_gen' (12#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/rst_gen.v:26]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_rx.v:6]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'meta_harden' [D:/Documents/vivado/vgatest/vgatest.srcs/source/meta_harden.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'meta_harden' (13#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/meta_harden.v:27]
+INFO: [Synth 8-6157] synthesizing module 'uart_baud_gen' [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_baud_gen.v:35]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+	Parameter OVERSAMPLE_RATE bound to: 153600 - type: integer 
+	Parameter DIVIDER bound to: 651 - type: integer 
+	Parameter OVERSAMPLE_VALUE bound to: 650 - type: integer 
+	Parameter CNT_WID bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud_gen' (14#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_baud_gen.v:35]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx_ctl' [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_rx_ctl.v:52]
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter DATA bound to: 2'b10 
+	Parameter STOP bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx_ctl' (15#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_rx_ctl.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (16#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_rx.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cmd_parse' [D:/Documents/vivado/vgatest/vgatest.srcs/source/cmd_parse.v:6]
+	Parameter MAX_ARG_CH bound to: 8 - type: integer 
+	Parameter RESP_OK bound to: 2'b00 
+	Parameter RESP_ERR bound to: 2'b01 
+	Parameter IDLE bound to: 3'b000 
+	Parameter CMD_WAIT bound to: 3'b001 
+	Parameter GET_ARG bound to: 3'b010 
+	Parameter SEND_RESP bound to: 3'b011 
+	Parameter CMD_W bound to: 7'b1010111 
+	Parameter CMD_R bound to: 7'b1010010 
+	Parameter CMD_N bound to: 7'b1001110 
+	Parameter CMD_P bound to: 7'b1010000 
+	Parameter CMD_S bound to: 7'b1010011 
+	Parameter CMD_n_l bound to: 7'b1101110 
+	Parameter CMD_p_l bound to: 7'b1110000 
+	Parameter CMD_s_l bound to: 7'b1110011 
+	Parameter CMD_G bound to: 7'b1000111 
+	Parameter CMD_C bound to: 7'b1000011 
+	Parameter CMD_H bound to: 7'b1001000 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/vivado/vgatest/vgatest.srcs/source/cmd_parse.v:237]
+INFO: [Synth 8-6155] done synthesizing module 'cmd_parse' (17#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/cmd_parse.v:6]
+INFO: [Synth 8-6157] synthesizing module 'resp_gen' [D:/Documents/vivado/vgatest/vgatest.srcs/source/resp_gen.v:41]
+	Parameter RESP_OK bound to: 2'b00 
+	Parameter RESP_ERR bound to: 2'b01 
+	Parameter RESP_DATA bound to: 2'b11 
+	Parameter STR_OK_LEN bound to: 5 - type: integer 
+	Parameter STR_ERR_LEN bound to: 6 - type: integer 
+	Parameter STR_DATA_LEN bound to: 13 - type: integer 
+	Parameter STR_LEN bound to: 13 - type: integer 
+	Parameter CNT_WID bound to: 4 - type: integer 
+	Parameter LEN_WID bound to: 4 - type: integer 
+	Parameter IDLE bound to: 1'b0 
+	Parameter SENDING bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'to_bcd' [D:/Documents/vivado/vgatest/vgatest.srcs/source/to_bcd.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'to_bcd' (18#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/to_bcd.v:33]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/Documents/vivado/vgatest/vgatest.srcs/source/resp_gen.v:213]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/Documents/vivado/vgatest/vgatest.srcs/source/resp_gen.v:223]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/Documents/vivado/vgatest/vgatest.srcs/source/resp_gen.v:234]
+INFO: [Synth 8-6155] done synthesizing module 'resp_gen' (19#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/resp_gen.v:41]
+INFO: [Synth 8-6157] synthesizing module 'char_fifo' [D:/Documents/vivado/vgatest/vgatest.runs/synth_1/.Xil/Vivado-15008-DESKTOP-6IOG41U/realtime/char_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'char_fifo' (20#1) [D:/Documents/vivado/vgatest/vgatest.runs/synth_1/.Xil/Vivado-15008-DESKTOP-6IOG41U/realtime/char_fifo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_tx.v:35]
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter CLOCK_RATE bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_tx_ctl' [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_tx_ctl.v:60]
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter DATA bound to: 2'b10 
+	Parameter STOP bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx_ctl' (21#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_tx_ctl.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (22#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/uart_tx.v:35]
+INFO: [Synth 8-6157] synthesizing module 'lb_ctl' [D:/Documents/vivado/vgatest/vgatest.srcs/source/lb_ctl.v:32]
+	Parameter FILTER bound to: 200000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [D:/Documents/vivado/vgatest/vgatest.srcs/source/debouncer.v:26]
+	Parameter FILTER bound to: 200000 - type: integer 
+	Parameter RELOAD bound to: 199999 - type: integer 
+	Parameter FILTER_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (23#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/debouncer.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'lb_ctl' (24#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/lb_ctl.v:32]
+INFO: [Synth 8-6157] synthesizing module 'seg7decimal' [D:/Documents/vivado/vgatest/vgatest.srcs/source/seg7decimal.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Documents/vivado/vgatest/vgatest.srcs/source/seg7decimal.v:47]
+INFO: [Synth 8-226] default block is never used [D:/Documents/vivado/vgatest/vgatest.srcs/source/seg7decimal.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'seg7decimal' (25#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/seg7decimal.v:23]
+WARNING: [Synth 8-3848] Net clk in module/entity bt_uart does not have driver. [D:/Documents/vivado/vgatest/vgatest.srcs/source/bt_uart.v:164]
+INFO: [Synth 8-6155] done synthesizing module 'bt_uart' (26#1) [D:/Documents/vivado/vgatest/vgatest.srcs/source/bt_uart.v:4]
+WARNING: [Synth 8-3331] design bt_uart has unconnected port sw_pin[5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1039.238 ; gain = 309.578
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1039.238 ; gain = 309.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1039.238 ; gain = 309.578
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1041.449 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/logo_rom/logo_rom/logo_rom_in_context.xdc] for cell 'vga/u1'
+Finished Parsing XDC File [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/logo_rom/logo_rom/logo_rom_in_context.xdc] for cell 'vga/u1'
+Parsing XDC File [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core/clk_core_in_context.xdc] for cell 'clk_gen_i0/clk_core_i0'
+Finished Parsing XDC File [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core/clk_core_in_context.xdc] for cell 'clk_gen_i0/clk_core_i0'
+Parsing XDC File [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/char_fifo/char_fifo/char_fifo_in_context.xdc] for cell 'char_fifo_i0'
+Finished Parsing XDC File [d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/char_fifo/char_fifo/char_fifo_in_context.xdc] for cell 'char_fifo_i0'
+Parsing XDC File [D:/Documents/vivado/vgatest/vgatest.srcs/constrs_1/new/display_vga.xdc]
+Finished Parsing XDC File [D:/Documents/vivado/vgatest/vgatest.srcs/constrs_1/new/display_vga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Documents/vivado/vgatest/vgatest.srcs/constrs_1/new/display_vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bt_uart_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bt_uart_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Documents/vivado/vgatest/vgatest.srcs/constraints/bluetooth.xdc]
+Finished Parsing XDC File [D:/Documents/vivado/vgatest/vgatest.srcs/constraints/bluetooth.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Documents/vivado/vgatest/vgatest.srcs/constraints/bluetooth.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bt_uart_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bt_uart_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1162.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1162.887 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_pin. (constraint file  d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core/clk_core_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_pin. (constraint file  d:/Documents/vivado/vgatest/vgatest.srcs/sources_1/ip/clk_core/clk_core/clk_core_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for vga/u1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_gen_i0/clk_core_i0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for char_fifo_i0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Documents/vivado/vgatest/vgatest.srcs/source/clk_div.v:74]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Documents/vivado/vgatest/vgatest.srcs/source/top_flyinglogo.v:189]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Documents/vivado/vgatest/vgatest.srcs/source/top_flyinglogo.v:189]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx_ctl'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cmd_parse'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx_ctl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx_ctl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+                CMD_WAIT |                               01 |                              001
+                 GET_ARG |                               10 |                              010
+               SEND_RESP |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'cmd_parse'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                 iSTATE2 |                               01 |                               01
+                  iSTATE |                               10 |                               10
+                 iSTATE0 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx_ctl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 7     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 17    
+	   2 Input      8 Bit       Adders := 9     
+	   2 Input      7 Bit       Adders := 9     
+	   2 Input      4 Bit       Adders := 12    
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 2     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 12    
+	   7 Input      8 Bit        Muxes := 1     
+	  14 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 7     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 9     
+	   4 Input      2 Bit        Muxes := 5     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 29    
+	   4 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module vga_640x480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module top_flyinglogo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     14 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module reset_bridge 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module meta_harden 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module uart_baud_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module uart_rx_ctl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+Module cmd_parse 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 9     
+Module to_bcd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 9     
+	   2 Input      7 Bit       Adders := 9     
+	   2 Input      4 Bit       Adders := 7     
++---Registers : 
+	               19 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module resp_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 8     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 10    
+	   7 Input      8 Bit        Muxes := 1     
+	  14 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module uart_tx_ctl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module lb_ctl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module seg7decimal 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design bt_uart has port seg7_0_dp driven by constant 0
+WARNING: [Synth 8-3917] design bt_uart has port seg7_1_dp driven by constant 0
+WARNING: [Synth 8-3331] design bt_uart has unconnected port sw_pin[5]
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[0]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[4]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[8]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[12]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[2]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[1]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[3]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[6]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[5]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[7]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[10]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[9]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[11]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[14]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'cmd_parse_i0/send_resp_data_reg[13]' (FDRE) to 'cmd_parse_i0/send_resp_data_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cmd_parse_i0/send_resp_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cmd_parse_i0/send_resp_type_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |char_fifo     |         1|
+|2     |clk_core      |         1|
+|3     |logo_rom      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |char_fifo |     1|
+|2     |clk_core  |     1|
+|3     |logo_rom  |     1|
+|4     |BUFHCE    |     1|
+|5     |CARRY4    |    32|
+|6     |LUT1      |    43|
+|7     |LUT2      |    61|
+|8     |LUT3      |    28|
+|9     |LUT4      |    62|
+|10    |LUT5      |    76|
+|11    |LUT6      |   122|
+|12    |MUXF7     |     1|
+|13    |FDCE      |    20|
+|14    |FDPE      |     4|
+|15    |FDRE      |   263|
+|16    |FDSE      |    22|
+|17    |IBUF      |     8|
+|18    |OBUF      |    64|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------+----------------+------+
+|      |Instance                       |Module          |Cells |
++------+-------------------------------+----------------+------+
+|1     |top                            |                |   833|
+|2     |  clk_gen_i0                   |clk_gen         |    47|
+|3     |    clk_div_i0                 |clk_div         |    41|
+|4     |  cmd_parse_i0                 |cmd_parse       |   126|
+|5     |  lb_ctl_i0                    |lb_ctl          |    71|
+|6     |    debouncer_i0               |debouncer       |    67|
+|7     |      meta_harden_signal_in_i0 |meta_harden_4   |     4|
+|8     |    meta_harden_rxd_i0         |meta_harden_3   |     3|
+|9     |  resp_gen_i0                  |resp_gen        |    22|
+|10    |  rst_gen_i0                   |rst_gen         |     4|
+|11    |    reset_bridge_clk_rx_i0     |reset_bridge    |     2|
+|12    |    reset_bridge_clk_tx_i0     |reset_bridge_2  |     2|
+|13    |  seg7_0                       |seg7decimal     |    41|
+|14    |  seg7_1                       |seg7decimal_0   |    11|
+|15    |  uart_rx_i0                   |uart_rx         |    91|
+|16    |    meta_harden_rxd_i0         |meta_harden     |     2|
+|17    |    uart_baud_gen_rx_i0        |uart_baud_gen_1 |    26|
+|18    |    uart_rx_ctl_i0             |uart_rx_ctl     |    63|
+|19    |  uart_tx_i0                   |uart_tx         |    65|
+|20    |    uart_baud_gen_tx_i0        |uart_baud_gen   |    27|
+|21    |    uart_tx_ctl_i0             |uart_tx_ctl     |    38|
+|22    |  vga                          |top_flyinglogo  |   273|
+|23    |    u2                         |vga_640x480     |   134|
+|24    |    u3                         |debounce        |     4|
++------+-------------------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1162.887 ; gain = 433.227
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1162.887 ; gain = 309.578
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1162.887 ; gain = 433.227
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1162.887 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i0 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i1 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i10 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i11 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i2 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i3 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i4 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i5 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i6 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i7 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i8 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. OBUF_vga_i9 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1163.770 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+98 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1163.770 ; gain = 707.117
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1163.770 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/vivado/vgatest/vgatest.runs/synth_1/bt_uart.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bt_uart_utilization_synth.rpt -pb bt_uart_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 10 11:47:15 2021...

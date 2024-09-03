@@ -1,0 +1,21 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sim_1/new/testbench.v,1631243126,verilog,,,,testbench,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/ip/data_ram/sim/data_ram.v,1631110207,verilog,,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/ip/inst_rom/sim/inst_rom.v,,data_ram,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/ip/inst_rom/sim/inst_rom.v,1633788970,verilog,,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/control.v,,inst_rom,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/control.v,1631508465,verilog,,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/cpu_pipeline.v,,control,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/cpu_pipeline.v,1633785799,verilog,,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/ex.v,,cpu_pipeline,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/ex.v,1631455964,verilog,,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/ex_mem.v,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/predef.vh,ex,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/ex_mem.v,1631456138,verilog,,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/id.v,,ex_mem,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/id.v,1631524168,verilog,,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/id_ex.v,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/predef.vh,id,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/id_ex.v,1631507844,verilog,,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/if_id.v,,id_ex,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/if_id.v,1631454313,verilog,,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/mem.v,,if_id,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/mem.v,1631514245,verilog,,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/mem_wb.v,,mem,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/mem_wb.v,1631523512,verilog,,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/pc.v,,mem_wb,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/pc.v,1632576661,verilog,,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/regfile.v,,pc,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/predef.vh,1631249545,verilog,,,,,,,,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/regfile.v,1633784637,verilog,,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/seg7decimal.v,,regfile,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
+D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sources_1/new/seg7decimal.v,1479194718,verilog,,D:/Documents/vivado/CPU_Pipeline/CPU_Pipeline.srcs/sim_1/new/testbench.v,,seg7decimal,,,../../../../CPU_Pipeline.srcs/sources_1/new,,,,,
